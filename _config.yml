@@ -1,11 +1,11 @@
 # Site Settings
 title: LESS
 tagline: LESS
-email: your-email@domain.com
+email: hildebrandt.carl@virginia.edy
 description: "Laboratory for Engineering Safe Software"
 baseurl: ""
 
-url: https://hildebrandt-carl.github.io
+url: https://less-lab-uva.github.io
 permalink: pretty
 repository: "LessLab"
 favicon: /favicon/favicon.ico
