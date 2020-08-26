@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+{% if page.toc %}
+    {% assign contentsTitle = page.toc_title | default: 'Contents' %}
+    {% include toc.html html=content class='menu-list' h_min=2 h_max=3 contents_title=contentsTitle %}
+{% endif %}
+<div class="content">
+    {{ content }}
+</div>
+
+{% assign images = site.gallery | sort:page.date%}
+
+<div class="columns is-multiline">
+    <!-- <div class="column is-12">
+        <p class="title is-3 has-text-centered">{{ gallery.title }}</p>
+    </div> -->
+    {% for image in images reversed%}
+    <div class="column is-4-desktop is-6-tablet">
+        <div class="card fancy_card">
+            <div class="card-image ">
+                <figure class="image {{ image.ratio | default: is-16by9 }}">
+                    <img src="{{ image.image | absolute_url }}" alt="{{ image.description }}">
+                </figure>
+            </div>
+            <div class="card-content">
+                <div class="content">
+                    {{ image.description | markdownify }}
+                </div>
+
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

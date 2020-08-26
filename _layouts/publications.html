@@ -1,0 +1,50 @@
+---
+layout: default
+show_sidebar: false
+---
+
+<div class="columns is-multiline">
+  <div class="column is-12 content">
+    {{ content }}
+  </div>
+</div>
+
+{% assign postsByYear = site.publications | group_by_exp:"post", "post.date | date: '%Y'" %}
+
+{% for year in postsByYear reversed%}
+  <div>
+    <div class="divider">{{ year.name }}</div>
+  </div>
+
+  {% for publication in year.items %}
+
+  <div class="columns is-multiline">
+
+    <div class="column is-12-desktop is-12-tablet">
+      <div class="{{ include.type | default: "list" }}__item">
+            <h2 class="title is-4">{{ publication.title }} </h2>
+            {% if publication.authors %}
+            <h2 class="subtitle is-6">{{ publication.authors }} </h2>
+            {% endif %}
+
+            <p>{{ publication.abstract }}</p>
+            <br /> 
+
+            {% if publication.awards %}
+            <b>{{ publication.awards }}</b>
+            {% endif %}
+
+            <p>Published in: <i>{{ publication.venue }}</i>, {{ publication.date | default: "1900-01-01" | date: "%Y" }} </p>
+
+            {% if publication.paperurl %}
+              <p><a href="{{ publication.paperurl }}">View paper</a></p>
+            {% endif %}
+      </div>
+    </div>
+
+  </div>
+
+  {% endfor %}
+
+{% endfor %}
+

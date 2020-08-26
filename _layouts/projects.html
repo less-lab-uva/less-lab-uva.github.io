@@ -1,0 +1,39 @@
+---
+layout: default
+show_sidebar: false
+---
+
+<div class="columns is-multiline">
+
+  <div class="column is-12 content">
+    {{ content }}
+  </div>
+
+  {% assign sorted_projects = site.projects | sort:page.date %}
+
+  {% for project in sorted_projects reversed%}
+  <div class="column is-12-desktop is-12-tablet">
+    
+    <!-- <a href="{{ project.url | relative_url }}"> -->
+      
+      <div class="card">
+        {% if project.image %}
+        <div class="card-image">
+          <figure class="image is-3by1">
+            <img src="{{site.baseurl}}{{ project.image }}" alt="{{ project.title }}" />
+          </figure>
+        </div>
+        {% endif %}
+
+        <div class="card-content">
+          <p class="title is-3">{{ project.title }}</h2>
+          <div class="content">{{ project.content }}</div>  
+        </div>
+      </div>
+
+    </a>
+
+  </div>
+{% endfor %}
+</div>
+

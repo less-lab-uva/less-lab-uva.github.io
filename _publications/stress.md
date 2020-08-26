@@ -1,0 +1,10 @@
+---
+title: "Feasible and Stressful Trajectory Generation for Mobile Robots"
+abstract: 'While executing nominal tests on mobile robots is required for their validation, such tests may overlook faults that arise under trajectories that accentuate certain aspects of the robots behavior. Uncovering such stressful trajectories is challenging as the input space for these systems, as they move, is extremely large, and the relation between a planned trajectory and its potential to induce stress can be subtle. To address this challenge we propose a framework that 1) integrates kinematic and dynamic physical models of the robot into the automated trajectory generation in order to generate valid trajectories, and 2) incorporates a parameterizable scoring model to efficiently generate physically valid yet stressful trajectories for a broad range of mobile robots. We evaluate our approach on four variants of a state-of-the-art quadrotor in a racing simulator. We find that, for non-trivial length trajectories, the incorporation of the kinematic and dynamic model is crucial to generate any valid trajectory, and that the approach with the best hand-crafted scoring model and with a trained scoring model can cause on average a 55.9% and 41.3% more stress than a random selection among valid trajectories. A follow-up study shows that the approach was able to induce similar stress on a deployed commercial quadrotor, with trajectories that deviated up to 6m from the intended ones.
+'
+date: 2020-07-18
+venue: 'ISSTA 20: 29th ACM SIGSOFT International Symposium on Software Testing and Analysis Proceedings (<a href="https://conf.researchr.org/details/issta-2020/issta-2020-papers/27/Feasible-and-Stressful-Trajectory-Generation-for-Mobile-Robots">ISSTA</a>)'
+paperurl: 'http://hildebrandt-carl.github.io/files/2020-07-18-ISSTA-Feasible.pdf'
+authors: 'Carl Hildebrandt, Sebastian Elbaum, Matthew B. Dwyer, Nicola Bezzo'
+awards: 'Distinguished Artifact Award'
+---

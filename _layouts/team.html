@@ -1,0 +1,75 @@
+---
+layout: default
+show_sidebar: false
+---
+
+<div class="columns is-multiline">
+
+  <div class="column is-12 content">
+    {{ content }}
+
+    {% assign sortedTeam = site.team | sort_natural: 'name' %}
+      <!-- {% for person in sortedTeam %}
+        <p>{{ person.name }}</p>
+      {% endfor %} -->
+
+    {% assign tiers = site.data.team_tiers %}
+
+    <div class="columns is-multiline">
+        {% for tier in tiers %}
+
+        {% assign display_tier = false %}
+        {% for person in site.team %}
+          {% if person.tier == tier.tier_name %}
+            {% assign display_tier = true %}
+            {% endif %}
+        {% endfor %}
+
+        {% if display_tier == true %}
+        <div class="column is-12">
+            <p class="title is-3 has-text-centered">
+                <span>{{ tier.tier_name }}</span>
+            </p>
+
+            <div class="columns is-multiline is-centered">
+                {% for person in sortedTeam %}
+                  {% if person.tier == tier.tier_name %}
+                  <div class="column is-3-desktop is-4-tablet">
+                      <div class="box has-text-centered">
+                          <p class="title is-5">
+                            {{ person.name }}
+                          </p>
+                          {% if person.picture %}
+                            <figure class="image container is-256x256">
+                              <img class="is-rounded" src="{{site.baseurl}}{{ person.picture }}" alt="{{ person.name }}" />
+                            </figure>
+                          {% else %}
+                            <figure class="image container is-256x256">
+                              <img class="is-rounded" src="{{site.baseurl}}/images/team/default.png" alt="{{ person.name }}" />
+                            </figure>
+                          {% endif %}
+                          <p class="subtitle is-6">
+                            {% if person.jobtitle %}
+                              <p class="is-small">{{ person.jobtitle }}</p>
+                            {% endif %}
+                            {% if person.website %}
+                              <a href="https://{{person.website}}" class="is-link is-small">Personal Website</a>
+                            {% else %}
+                              <br />
+                            {% endif %}
+                          </p>
+                      </div>
+                  </div>
+                  {% endif %}
+                  {% endfor %}
+            </div>
+        </div>
+        
+        <div class="column is-12">
+            <hr />
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+</div>
+

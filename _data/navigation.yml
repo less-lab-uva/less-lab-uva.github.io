@@ -1,0 +1,10 @@
+- name: Projects
+  link: /projects/
+- name: Tools and Datasets
+  link: /tools/
+- name: Publications
+  link: /publications/
+- name: Team
+  link: /team/
+- name: About
+  link: /about/
