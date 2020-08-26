@@ -7,7 +7,7 @@ baseurl: ""
 
 url: https://less-lab-uva.github.io
 permalink: pretty
-repository: "LessLab"
+repository: "less-lab-uva.github.io"
 favicon: /favicon/favicon.ico
 contact: /contact
 #hide_share_buttons: true
