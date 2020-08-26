@@ -4,7 +4,7 @@ tagline: LESS
 email: hildebrandt.carl@virginia.edy
 description: >
   Laboratory for Engineering Safe Software
-baseurl: "/"
+baseurl: ""
 
 url: https://less-lab-uva.github.io
 permalink: pretty
