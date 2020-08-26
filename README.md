@@ -1,5 +1,7 @@
 # LESS Lab Website
 
+Our lab website: https://less-lab-uva.github.io
+
 This contains the site used by the Less Lab @ UVA. This site was built using [Jekyll](https://jekyllrb.com). The sites original theme is based off of [bulma-clean-theme](https://github.com/chrisrhymes/bulma-clean-theme), a theme created by [C.S. Rhymes](https://dev.to/chrisrhymes). 
 
 ## Adding Information
