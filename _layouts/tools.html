@@ -38,7 +38,7 @@ layout: default
                     {% endif %}
                     
                     <div class="content">
-                        <p>{{ tool.description | markdownify }}</p>
+                        <p>{{ tool.content }}</p>
                     </div>                 
 
                     <a href="{{ tool.button_link }}" class="button is-primary">
@@ -46,7 +46,9 @@ layout: default
                     </a>
                 </div>
             </div>
-
+            {% if tool.team %}
+                <div class="content"><b>Team Members:</b> {{ tool.team }}</div>
+            {% endif %}
         </div>
     </section>
 {% endfor %}

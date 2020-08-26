@@ -8,10 +8,7 @@ show_sidebar: false
   <div class="column is-12 content">
     {{ content }}
 
-    {% assign sortedTeam = site.team | sort_natural: 'name' %}
-      <!-- {% for person in sortedTeam %}
-        <p>{{ person.name }}</p>
-      {% endfor %} -->
+    {% assign sortedTeam = site.team | sort_natural: 'last_name' %}
 
     {% assign tiers = site.data.team_tiers %}
 
@@ -37,15 +34,15 @@ show_sidebar: false
                   <div class="column is-3-desktop is-4-tablet">
                       <div class="box has-text-centered">
                           <p class="title is-5">
-                            {{ person.name }}
+                            {{ person.first_name }} {{ person.last_name }}
                           </p>
                           {% if person.picture %}
                             <figure class="image container is-256x256">
-                              <img class="is-rounded" src="{{site.baseurl}}{{ person.picture }}" alt="{{ person.name }}" />
+                              <img class="is-rounded" src="{{site.baseurl}}{{ person.picture }}" alt="{{ person.first_name }}" />
                             </figure>
                           {% else %}
                             <figure class="image container is-256x256">
-                              <img class="is-rounded" src="{{site.baseurl}}/images/team/default.png" alt="{{ person.name }}" />
+                              <img class="is-rounded" src="{{site.baseurl}}/images/team/default.png" alt="{{ person.first_name }}" />
                             </figure>
                           {% endif %}
                           <p class="subtitle is-6">

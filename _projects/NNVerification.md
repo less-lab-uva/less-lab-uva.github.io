@@ -1,6 +1,7 @@
 ---
 title: Neural Network Verification
 image: /images/projects/neural_networks.png
+team: Carl Hildebrandt, David Shriver
 date: 2015-01-22
 ---
 

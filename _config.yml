@@ -2,12 +2,13 @@
 title: LESS
 tagline: LESS
 email: hildebrandt.carl@virginia.edy
-description: "Laboratory for Engineering Safe Software"
-baseurl: ""
+description: >
+  Laboratory for Engineering Safe Software
+baseurl: "/"
 
 url: https://less-lab-uva.github.io
 permalink: pretty
-repository: "less-lab-uva.github.io"
+repository: "less-lab-uva"
 favicon: /favicon/favicon.ico
 contact: /contact
 #hide_share_buttons: true

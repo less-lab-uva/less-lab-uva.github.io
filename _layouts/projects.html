@@ -26,8 +26,12 @@ show_sidebar: false
         {% endif %}
 
         <div class="card-content">
-          <p class="title is-3">{{ project.title }}</h2>
+          <h2 class="title is-3">{{ project.title }}</h2>
           <div class="content">{{ project.content }}</div>  
+          <br/>
+          {% if project.team %}
+            <div class="content"><b>Team Members:</b> {{ project.team }}</div>
+          {% endif %}
         </div>
       </div>
 
