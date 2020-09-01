@@ -19,7 +19,7 @@ show_sidebar: false
       <div class="card">
         {% if project.image %}
         <div class="card-image">
-          <figure class="image is-3by1">
+          <figure class="image {% if project.image_ratio %} {{ project.image_ratio }} {% else %} is-3by1 {% endif %}">
             <img src="{{site.baseurl}}{{ project.image }}" alt="{{ project.title }}" />
           </figure>
         </div>

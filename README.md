@@ -47,6 +47,7 @@ To add a project to the website, add a markdown file to the `_project` folder. T
 
 * **title**: (required) The title of your project.
 * **image**: (optional) An image that will be displayed as a banner for your project, preferably in the folder `/images/projects/`. **Note** it is best to use an image that longer vertically than horizontally for best formatting.
+* **image_ratio**: (optional) What ratio the image is, used to format the final image. Defaults to `is-3by1`. A complete list of ratios is available [here](https://bulma.io/documentation/elements/image/).
 * **team**: (optional) A list of team members separated by commas.
 * **date**: (required) The date your project was created in the format `YYYY-MM-DD`, used for sorting.
 
@@ -81,6 +82,7 @@ To add a tool or dataset to the website, add a markdown file to the `_tools` fol
 * **title**: (required) The title of your tool or dataset.
 * **subtitle**: (required) A subtitle for your tool or dataset. Generally used to describe what you are presenting, i.e. is it a tool, dataset, artifact?
 * **image**: (optional) An image that will be displayed as a banner for your project, preferably in the folder `/images/tools/`. **Note** it is best to use an image that longer vertically than horizontally for best formatting.
+* **image_ratio**: (optional) What ratio the image is, used to format the final image. Defaults to `is-3by1`. A complete list of ratios is available [here](https://bulma.io/documentation/elements/image/).
 * **button_link**: (required) A link to your tool or dataset.
 * **github**: (optional) A link to the GitHub repository where the tool or dataset can be found.
 * **team**: (optional) A list of team members separated by commas.
@@ -110,7 +112,7 @@ To add a gallery image to the website, add a markdown file to the `_gallery` fol
 
 * **image**: (required) A link to the image you want to display, preferably in the folder `/images/gallery/`. 
 * **description**: (optional) A short description of the image.
-* **ratio**: (optional) What ratio the image is, used to format the final image. When in doubt, use `is-4by3`. A complete list of ratios is available [here](https://bulma.io/documentation/elements/image/).
+* **image_ratio**: (optional) What ratio the image is, used to format the final image. Defaults to `is-3by1`. A complete list of ratios is available [here](https://bulma.io/documentation/elements/image/).
 * **date**: (required) The date your image was taken in the format `YYYY-MM-DD`, used for sorting.
 
 An example of a complete gallery markdown file is shown below:

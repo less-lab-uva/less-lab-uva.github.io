@@ -20,7 +20,7 @@ layout: default
     <div class="column is-4-desktop is-6-tablet">
         <div class="card fancy_card">
             <div class="card-image ">
-                <figure class="image {{ image.ratio | default: is-16by9 }}">
+                <figure class="image {{ image.image_ratio | default: is-16by9 }}">
                     <img src="{{ image.image | absolute_url }}" alt="{{ image.description }}">
                 </figure>
             </div>
