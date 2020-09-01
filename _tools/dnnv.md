@@ -1,5 +1,5 @@
 ---
-title: DNNV: Deep Neural Network Verification
+title: "DNNV: Deep Neural Network Verification"
 subtitle: Tool
 team: David Shriver, Dong Xu, Sebastian Elbaum, Matthew Dwyer
 github: dlshriver/DNNV
