@@ -9,4 +9,4 @@ permalink: "/publications/"
 
 # Publications
 
-Below is a list of publications produced by the LESS lab:
+Coming soon!
