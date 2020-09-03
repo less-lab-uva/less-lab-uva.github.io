@@ -11,12 +11,13 @@ show_sidebar: false
 
 <!-- {% assign postsByYear = site.publications | group_by_exp:"post", "post.date | date: '%Y'" %}
 
-{% for year in postsByYear reversed%}
+  {% for year in postsByYear reversed%}
+  {% assign sortedPublications = year.items | sort:"title" %}
   <div>
     <div class="divider">{{ year.name }}</div>
   </div>
 
-  {% for publication in year.items %}
+  {% for publication in year.items  %}
 
   <div class="columns is-multiline">
 
@@ -34,7 +35,7 @@ show_sidebar: false
             <b>{{ publication.awards }}</b>
             {% endif %}
 
-            <p>Published in: <i>{{ publication.venue }}</i>, {{ publication.date | default: "1900-01-01" | date: "%Y" }} </p>
+            <p>Published in: <i>{{ publication.venue }}</i></p>
 
             {% if publication.paperurl %}
               <p><a href="{{ publication.paperurl }}">View paper</a></p>

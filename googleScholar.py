@@ -9,12 +9,14 @@ def get_authors_names():
         author_file = open(os.path.abspath(os.getcwd())+"/_team/"+filename, "r")
 
         for line in author_file.readlines():
-            if "name" in line:
-                name = line.split(':')[1].lstrip().rstrip("\n")
+            if "first_name" in line:
+                first_name = line.split(':')[1].lstrip().rstrip("\n")
+            if "last_name" in line:
+                last_name = line.split(':')[1].lstrip().rstrip("\n")
             if "tier" in line:
                 tier = line.split(':')[1].lstrip().rstrip("\n")
         if (tier.upper() == "GRADUATE STUDENTS"):
-            authors_names.append(name + ", University of Virginia")
+            authors_names.append(first_name + " " + last_name + ", University of Virginia")
 
     return authors_names
 
@@ -94,21 +96,48 @@ def check_if_publication_exists(publication_name):
     return os.path.isfile(os.path.abspath(os.getcwd())+"/_publications/"+slugify(publication_name)+".md")
 
 def convert_authors_string(authors_string):
+    final_authors = ""
     authors_string = authors_string.replace(',', '')
-    authors_string = authors_string.replace(' and ', ', ')
-    return authors_string
+    # split the name using and
+    individual_authors = authors_string.split(" and ")
+    for i in range(len(individual_authors)):
+        author = individual_authors[i]
+        names = author.split(" ")
+        full_name = ""
+        for n in reversed(names):
+            if len(full_name) > 0:
+                full_name += " "
+            full_name += n
+        if len(final_authors) > 0:
+            if i == len(individual_authors) - 1:
+                final_authors += " and "
+            else:
+                final_authors += ", "
+        final_authors += full_name
+    
+    return final_authors
 
-def save_publication(publication):
-    publication_file = open(os.path.abspath(os.getcwd())+"/_publications/"+slugify(publication.bib['title'])+".md", "w")
-    publication_file.write("---"+"\n")
-    publication_file.write("title: '"+publication.bib['title']+"'\n")
-    publication_file.write("abstract: "+publication.bib['abstract']+"\n")
-    publication_file.write("date: "+publication.bib['year']+"\n")
-    publication_file.write("venue: "+publication.bib['venue']+"\n")
-    publication_file.write("paperurl: "+publication.bib['url']+"\n")
-    publication_file.write("authors: "+convert_authors_string(publication.bib['author'])+"\n")
-    publication_file.write("---")
-    publication_file.close()
+def save_publication(publication, debug = False):
+    if not debug:
+        publication_file = open(os.path.abspath(os.getcwd())+"/_publications/"+slugify(publication.bib['title'])+".md", "w")
+        publication_file.write("---"+"\n")
+        publication_file.write("title: '"+publication.bib['title']+"'\n")
+        publication_file.write("abstract: "+publication.bib['abstract']+"\n")
+        publication_file.write("date: "+publication.bib['year']+"\n")
+        publication_file.write("venue: "+publication.bib['venue']+"\n")
+        publication_file.write("paperurl: "+publication.bib['url']+"\n")
+        publication_file.write("authors: "+convert_authors_string(publication.bib['author'])+"\n")
+        publication_file.write("---")
+        publication_file.close()
+    else:
+        print("---"+"\n")
+        print("title: '"+publication.bib['title']+"'\n")
+        print("abstract: "+publication.bib['abstract']+"\n")
+        print("date: "+publication.bib['year']+"\n")
+        print("venue: "+publication.bib['venue']+"\n")
+        print("paperurl: "+publication.bib['url']+"\n")
+        print("authors: "+convert_authors_string(publication.bib['author'])+"\n")
+        print("---")
     print("Saved!\n")
 
 # Start Running the Script
@@ -124,4 +153,5 @@ for author in authors:
         if check_if_publication_exists(publication):
             continue
         filled_publication = get_publication(publication)
-        save_publication(filled_publication)
+        print(filled_publication)
+        save_publication(filled_publication, True)

@@ -8,3 +8,4 @@ Gemfile.lock
 vendor
 geckodriver.log
 scholar.log
+__pycache__
