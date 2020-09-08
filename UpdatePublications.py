@@ -131,7 +131,6 @@ def main():
                 publication_file.write('venue: "' + make_yaml_safe(venue) + '"\n')
                 publication_file.write('paperurl: ' + make_yaml_safe(url) + '\n')
                 publication_file.write('authors: "' + make_yaml_safe(author) + '"\n')
-                publication_file.write('awards: "' + '"\n')
                 publication_file.write('---')
                 publication_file.close()
 

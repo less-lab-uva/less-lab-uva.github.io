@@ -27,17 +27,19 @@ To add a team member, add your markdown file to the `_team` folder. The fields w
 * **last_name**: (required) Your last name.
 * **picture**: (optional) A picture of you, preferably in the folder `/images/team/`. **Note:** the image needs to be square.
 * **website**: (optional) A link to your personal website.
+* **dblp_uri**: (optional) A link to your dblp bib file. By adding this, we will automatically add your publications to the publications tab.
 * **tier**: (required) This needs to be one of the following (Professors, Postdoctoral Students, Graduate Students, Undergraduate Students, Previous Students).
 
 An example of a complete team member markdown file is shown below:
 
 ```markdown
 ---
-first_name: Felipe
-last_name: Toledo
-picture: /images/team/felipe.jpeg
-tier: Graduate Students
-website: felipetoledo4815.github.io/profile/
+first_name: Mary Lou
+last_name: Soffa
+picture: /images/team/marylou.jpg
+website: www.cs.virginia.edu/~soffa/index.html%3Fp=6.html
+dblp_uri: https://dblp.org/pid/s/MaryLouSoffa.bib
+tier: Professors
 ---
 ```
 
@@ -128,50 +130,30 @@ date: 2020-03-22
 
 ### Publications
 
-As we stated before, we are working on a way to automatically update publications. However, here is the information to add or edit current publications. To add a publication to the website, add a markdown file to the `_publications` folder. The fields which need to be filled in are:
+We have developed a way to automatically pull your publications using the `dblp_uri` tag from your team profile. However, you can also add a publication manually. To add a publication to the website, add a markdown file to the `_publications` folder. The fields which need to be filled in are:
 
 * **title**: (required) The title of your publication
-* **abstract**: (required) The abstract from your publication.
 * **date**: (required) The date your publication was published in the format `YYYY-MM-DD`.
-* **venue**: (required) The venue your publication was published in. You are able to add both HTML and markdown to this field. 
+* **venue**: (optional) The venue your publication was published in. You are able to add both HTML and markdown to this field. 
 * **paperurl**: (optional) A link to your paper.
-* **authors** (required) A list of authors separated by commas.
-* **awards** (optional) Any awards which the publication won.
+* **authors** (optional) A list of authors separated by commas.
 
 An example of a complete publication markdown file is shown below:
 
 ```markdown
 ``
 ---
-title: "Feasible and Stressful Trajectory Generation for Mobile Robots"
-abstract: 'While executing nominal tests on mobile ...'
-date: 2020-07-18
-venue: 'ISSTA 20: 29th ACM SIGSOFT International Symposium on Software Testing and Analysis Proceedings (<a href="https://conf.researchr.org/details/issta-2020/issta-2020-papers/27/Feasible-and-Stressful-Trajectory-Generation-for-Mobile-Robots">ISSTA</a>)'
-paperurl: 'http://hildebrandt-carl.github.io/files/2020-07-18-ISSTA-Feasible.pdf'
-authors: 'Carl Hildebrandt, Sebastian Elbaum, Matthew B. Dwyer, Nicola Bezzo'
-awards: 'Distinguished Artifact Award'
+title: "At The End Of Synthesis: Narrowing Program Candidates"
+date: 2017-01-01
+venue: "39th IEEE/ACM International Conference on Software Engineering: New Ideas and Emerging Technologies Results Track, ICSE-NIER 2017, Buenos Aires, Argentina, May 20-28, 2017"
+paperurl: https://doi.org/10.1109/ICSE-NIER.2017.7
+authors: "David Shriver, Sebastian G Elbaum and Kathryn T Stolee"
 ---
 ```
 
 ## Automatically Updating Publications
 
-Right now, we are in the process of developing a way to automatically update publications. Our current solution is listed below:
-
-### Google Scholar Script
-
-To pull publications from Google Scholar automatically, add a file with your data (including your full name) in the **"_team"** folder. 
-
-Before running the script, you should install the following libraries:
-
-```python
-scholarly
-free-proxy
-python-slugify
+To update the publications, all you need to do is run the `UpdatePublications.py` script. To do that you can run the following command in your terminal:
+```bash
+$ python3 UpdatePublications.py
 ```
-
-after installing them, run the script in the following way:
-
-```console
-python googleScholar.py
-```
-
