@@ -9,4 +9,4 @@ permalink: "/publications/"
 
 # Publications
 
-Coming soon!
+Below is a list of the publications by our lab members:
