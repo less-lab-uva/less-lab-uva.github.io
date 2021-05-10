@@ -5,8 +5,9 @@ show_sidebar: false
 hide_hero: true
 sort: date
 permalink: "/projects/"
+callouts: projectlist
 ---
 
 # Projects
 
-The lab takes part in many projects. Find the list of projects below
+Here we will write a little bit more information on the projects

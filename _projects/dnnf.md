@@ -1,11 +1,12 @@
 ---
 title: "DNNF: Deep Neural Network Falsification"
-subtitle: Tool
-image: /images/tools/dnnf.png
-image_ratio: is-3by1
+image: /images/projects/dnnf.png
+date: 2015-01-20
 team: David Shriver, Sebastian Elbaum, Matthew Dwyer
+
 github: dlshriver/DNNF
 button_link: https://github.com/dlshriver/DNNF
+group: ml
 ---
 
 DNNF is a framework for falsification of deep neural networks (DNN).

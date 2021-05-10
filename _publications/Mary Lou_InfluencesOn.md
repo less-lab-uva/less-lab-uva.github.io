@@ -4,5 +4,4 @@ date: 2003-01-01
 venue: ""
 paperurl: https://doi.org/10.1145/882240.882258
 authors: "Barbara G Ryder and Mary Lou Soffa"
-awards: ""
 ---

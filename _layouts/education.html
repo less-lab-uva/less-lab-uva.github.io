@@ -1,0 +1,39 @@
+---
+layout: default
+show_sidebar: false
+---
+
+<div class="columns is-multiline">
+
+  <div class="column is-12 content">
+    {{ content }}
+  </div>
+
+  {% assign sorted_items = site.education | sort:page.date %}
+
+  {% for edu in sorted_items reversed%}
+  <div class="column is-12-desktop is-12-tablet">
+    
+    <div class="card">
+        {% if edu.image %}
+        <div class="card-image">
+            <figure class="image {% if edu.image_ratio %} {{ edu.image_ratio }} {% else %} is-3by1 {% endif %}">
+            <img src="{{site.baseurl}}{{ edu.image }}" alt="{{ edu.title }}" />
+            </figure>
+        </div>
+        {% endif %}
+
+        <div class="card-content">
+            <h2 class="title is-3">{{ edu.title }}</h2>
+            <div class="content">{{ edu.content }}</div>  
+            <br/>
+            {% if edu.professor %}
+            <div class="content"><b>Professor:</b> {{ edu.professor }}</div>
+            {% endif %}
+        </div>
+    </div>
+
+  </div>
+  {% endfor %}
+</div>
+

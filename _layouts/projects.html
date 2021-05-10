@@ -14,6 +14,7 @@ show_sidebar: false
   {% for project in sorted_projects reversed%}
   <div class="column is-12-desktop is-12-tablet">
     
+    {% if project.group == page.group %}
       <div class="card">
         {% if project.image %}
         <div class="card-image">
@@ -32,10 +33,9 @@ show_sidebar: false
           {% endif %}
         </div>
       </div>
-
-    </a>
+      {% endif %}
 
   </div>
-{% endfor %}
+  {% endfor %}
 </div>
 

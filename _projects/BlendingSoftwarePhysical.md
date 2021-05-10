@@ -2,7 +2,9 @@
 title: Blending Software and Physical Models for Testing Autonomous Systems
 image: /images/projects/physicalsoftware.png
 date: 2015-01-20
-team: Carl Hildebrandt
+team: Carl Hildebrandt, Sebastian Elbaum
+
+group: robot
 ---
 
 This research aims at finding ways to ensure the safety and validity of autonomous systems; a non-trivial problem. This problem is non-trivial and unique because of two fundamental issues. First, these systems have an unconstrained input space due to them operating in the real world. Second, these systems rely on technology, such as machine learning, that is inherently statistical and tends to be non-deterministic. This research recognizes the dual nature of autonomous systems, namely that they contain both physical and software elements that interact in the real world. The insight that we can harness information from the physical models of autonomous systems as well as information from software analysis is unique and has numerous benefits. For example:

@@ -1,11 +1,12 @@
 ---
 title: "DNNV: Deep Neural Network Verification"
-subtitle: Tool
-image: /images/tools/dnnv.png
-image_ratio: is-3by1
+image: /images/projects/dnnv.png
+date: 2015-01-20
 team: David Shriver, Dong Xu, Sebastian Elbaum, Matthew Dwyer
+
 github: dlshriver/DNNV
 button_link: https://github.com/dlshriver/DNNV
+group: ml
 ---
 
 DNNV is a framework for verifying deep neural networks (DNN). 
