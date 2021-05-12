@@ -1,11 +1,11 @@
-- name: Projects
+- name: Research Projects
   link: /#
   dropdown:
-    - name: Machine-Learned Models
+    - name: Verification and Validation of Machine-Learned Models
       link: /projects-machine-learned/
-    - name: Robotic Systems
+    - name: Verification and Validation of Robotic Systems
       link: /projects-robotics/
-    - name: Cross-Cutting
+    - name: Verification and Validation of Cross-Cutting Systems
       link: /projects-cross-cutting/
 - name: Education Innovation
   link: /education/
