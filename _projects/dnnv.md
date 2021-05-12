@@ -3,9 +3,6 @@ title: "DNNV: Deep Neural Network Verification"
 image: /images/projects/dnnv.png
 date: 2015-01-20
 team: David Shriver, Dong Xu, Sebastian Elbaum, Matthew Dwyer
-
-github: dlshriver/DNNV
-button_link: https://github.com/dlshriver/DNNV
 group: ml
 ---
 
