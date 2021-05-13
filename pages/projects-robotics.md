@@ -5,7 +5,7 @@ show_sidebar: false
 hide_hero: true
 sort: date
 permalink: "/projects-robotics/"
-group: robot
+label: Robotics
 ---
 
 # Verification and Validation of Robotic Systems

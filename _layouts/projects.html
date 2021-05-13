@@ -14,7 +14,7 @@ show_sidebar: false
   {% for project in sorted_projects reversed%}
   <div class="column is-12-desktop is-12-tablet">
     
-    {% if project.group == page.group %}
+    {% if project.label == page.label %}
       <div class="card">
         {% if project.image %}
         <div class="card-image">

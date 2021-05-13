@@ -5,7 +5,7 @@ show_sidebar: false
 hide_hero: true
 sort: date
 permalink: "/projects-cross-cutting/"
-group: "cross"
+label: Foundational
 ---
 
 # Verification and Validation of Cross-Cutting Systems

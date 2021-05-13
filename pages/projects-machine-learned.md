@@ -5,7 +5,7 @@ show_sidebar: false
 hide_hero: true
 sort: date
 permalink: "/projects-machine-learned/"
-group: ml
+label: DNN
 ---
 
 # Verification and Validation of Machine-Learned Models
