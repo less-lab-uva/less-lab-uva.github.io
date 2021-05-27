@@ -1,5 +1,5 @@
 ---
-title: Discrete Math: A Constructive Approach
+title: Discrete Math - A Constructive Approach
 image: /images/education/discreteMath.png
 date: 2021-05-27
 professor: Kevin Sullivan

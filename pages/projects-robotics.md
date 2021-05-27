@@ -11,5 +11,9 @@ label: Robotics
 # Verification and Validation of Robotic Systems
  
 
-*  [FuzzingRobots](#FuzzingRobots)
+*  [Fuzzing Robots](#FuzzingRobots)
+
+*  [Testing the Swarm](#Swarm)
+
+*  [World in the Loop Simulation](#WIL)
  
