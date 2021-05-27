@@ -8,7 +8,7 @@ permalink: "/projects-cross-cutting/"
 label: Foundational
 ---
 
-# Verification and Validation of Cross-Cutting Systems
+# Foundational Verification and Validation 
 
 Here is where you will write the overview of the project area. It accepts markdown and so you can do **bold** and *italics*. Additionally you can add tables such as:
 
