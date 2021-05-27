@@ -9,4 +9,11 @@ permalink: "/education/"
 
 # Education Innovations for Engineering Safe Software
 
-A introductory paragraph
+Our group also leads several efforts to push the boundaries of education, changing how traditional courses are delivered and developing courses that blend areas. 
+
+* Robotics for Software Engineers
+
+* Compilers and Program Analysis
+(https://matthewbdwyer.github.io/6620/)
+
+* [Discrete Mathematics: A Constructive Approach](#discreteMath)
