@@ -11,9 +11,10 @@ permalink: "/education/"
 
 Our group also leads several efforts to push the boundaries of education, changing how traditional courses are delivered and developing courses that blend areas. 
 
-* Robotics for Software Engineers
+* [Robotics for Software Engineers](#Robotics4SE)
 
-* Compilers and Program Analysis
-(https://matthewbdwyer.github.io/6620/)
+* [Compilers](#Compilers)
 
 * [Discrete Mathematics: A Constructive Approach](#discreteMath)
+
+* Program Analysis and Applications
