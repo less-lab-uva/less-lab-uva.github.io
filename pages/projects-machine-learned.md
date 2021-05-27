@@ -13,6 +13,12 @@ label: DNN
 
 Our group is leading work in ... 
 
- 
+*  [DNN Testing](#tnn)
+
 *  [DNN Falsification](#DNNFalsification)
- 
+
+*  [DNN Verification](#DNNVerification) 
+
+*  [DNN Rearchitecting](#DNNRearchitecting) 
+
+*  [DNN V&V Benchmarking](#DNNV&VBenchmarking) 
