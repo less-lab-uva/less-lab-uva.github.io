@@ -17,3 +17,6 @@ label: Robotics
 
 *  [World in the Loop Simulation](#WIL)
  
+*  [Physical Semantics of Code](#Physical)
+
+*  [Debugging Robots through Environment Reduction](#ddenv)
