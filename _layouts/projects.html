@@ -10,12 +10,12 @@ show_sidebar: false
   </div>
 
   {% assign sorted_projects = site.projects | sort:page.date %}
-
   {% for project in sorted_projects reversed%}
   <div class="column is-12-desktop is-12-tablet">
     
     {% if project.label == page.label %}
       <div class="card">
+        <a name="{{ project.id | remove: '/projects/' }}"></a>
         {% if project.image %}
         <div class="card-image">
           <figure class="image {% if project.image_ratio %} {{ project.image_ratio }} {% else %} is-3by1 {% endif %}">
@@ -24,7 +24,7 @@ show_sidebar: false
         </div>
         {% endif %}
 
-        <div class="card-content">
+        <div class="card-content is-8-desktop is-12-tablet">
           <h2 class="title is-3">{{ project.title }}</h2>
           <div class="content">{{ project.content }}</div>  
           <br/>
@@ -38,4 +38,3 @@ show_sidebar: false
   </div>
   {% endfor %}
 </div>
-

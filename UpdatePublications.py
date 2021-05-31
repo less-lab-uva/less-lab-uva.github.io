@@ -1,8 +1,9 @@
-import requests
-import bibtexparser
+import re
 import os
 import time
-import re
+import requests
+import bibtexparser
+
 
 def remove_special_chartacters(in_string):
     out_string = re.sub('[^A-Za-z0-9 ]+', '', in_string)

@@ -13,24 +13,32 @@ show_sidebar: false
 
   {% for edu in sorted_items reversed%}
   <div class="column is-12-desktop is-12-tablet">
-    
-    <div class="card">
-        {% if edu.image %}
-        <div class="card-image">
-            <figure class="image {% if edu.image_ratio %} {{ edu.image_ratio }} {% else %} is-3by1 {% endif %}">
-            <img src="{{site.baseurl}}{{ edu.image }}" alt="{{ edu.title }}" />
-            </figure>
-        </div>
-        {% endif %}
 
-        <div class="card-content">
-            <h2 class="title is-3">{{ edu.title }}</h2>
-            <div class="content">{{ edu.content }}</div>  
-            <br/>
-            {% if edu.professor %}
+    <div class="card">
+      <a name="{{ edu.id | remove: '/education/' }}"></a>
+      {% if edu.image %}
+      <div class="card-image">
+          <figure class="image {% if edu.image_ratio %} {{ edu.image_ratio }} {% else %} is-3by1 {% endif %}">
+          <img src="{{site.baseurl}}{{ edu.image }}" alt="{{ edu.title }}" />
+          </figure>
+      </div>
+      {% endif %}
+
+      <div class="card-content is-8-desktop is-12-tablet">
+
+          <h2 class="title is-3">{{ edu.title }}</h2>
+          <div class="content">{{ edu.content }}</div>  
+          {% if edu.website %}
+            <div class="buttons is-centered">
+              <a href="{{ edu.website }}" class="button is-primary">
+                Visit Website
+              </a>  
+            </div>
+          {% endif %}
+          {% if edu.professor %}
             <div class="content"><b>Professor:</b> {{ edu.professor }}</div>
-            {% endif %}
-        </div>
+          {% endif %}
+      </div>
     </div>
 
   </div>

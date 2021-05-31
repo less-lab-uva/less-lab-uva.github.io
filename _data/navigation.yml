@@ -6,12 +6,14 @@
     - name: Verification and Validation of Robotic Systems
       link: /projects-robotics/
     - name: Verification and Validation of Cross-Cutting Systems
-      link: /projects-cross-cutting/
+      link: /projects-foundational/
 - name: Education Innovation
   link: /education/
 - name: Publications
   link: /publications/
 - name: Team
   link: /team/
+# - name: Lab Templates
+#   link: /templates/
 - name: About
   link: /about/

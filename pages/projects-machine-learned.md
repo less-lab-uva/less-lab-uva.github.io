@@ -10,15 +10,11 @@ label: DNN
 
 # Verification and Validation of Machine-Learned Models
 
-
-Our group is leading work in ... 
-
-*  [DNN Testing](#tnn)
-
-*  [DNN Falsification](#DNNFalsification)
-
+Our group is currently leading work in the following areas:
+ 
+*  [DNN Testing](#TestingNNWithGenerative)
 *  [DNN Verification](#DNNVerification) 
-
-*  [DNN Rearchitecting](#DNNRearchitecting) 
-
-*  [DNN V&V Benchmarking](#DNNV&VBenchmarking) 
+*  [DNN Falsification](#DNNFalsification)
+<!-- *  [DNN Rearchitecting](#DNNRearchitecting)  -->
+*  DNN Rearchitecting
+*  [DNN V&V Benchmarking](#GDVB) 

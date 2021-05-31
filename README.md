@@ -98,7 +98,7 @@ An example of a complete tool or dataset markdown file is shown below:
 ---
 title: Feasible and Stressful Trajectory Generation for Mobile Robots
 subtitle: Tool Artifact
-image: /images/tools/traj_gen.gif
+image: /images/projects/TrajectoryGeneration.gif
 description: 
 button_link: https://hildebrandt-carl.github.io/RobotTestGenerationArtifact/
 github: hildebrandt-carl/RobotTestGeneration
