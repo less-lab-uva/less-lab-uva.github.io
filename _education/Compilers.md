@@ -1,6 +1,6 @@
 ---
 title: Compilers
-image: /images/education/Compilers.pdf
+image: /images/education/Compilers.png
 date: 2021-05-27
 professor: Matthew Dwyer
 website: https://matthewbdwyer.github.io/6620/
