@@ -1,6 +1,6 @@
 ---
 title: Robotics for Software Engineers
-image: /images/education/droneSim.gif
+image: /images/education/DroneSim.gif
 date: 2021-05-26
 professor: Sebastian Elbaum
 website: https://less-lab-uva.github.io/CS4501-Website/

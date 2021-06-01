@@ -1,6 +1,6 @@
 ---
 title: Discrete Math - A Constructive Approach
-image: /images/education/discreteMath.png
+image: /images/education/DiscreteMath.png
 date: 2021-05-27
 professor: Kevin Sullivan
 website: https://kevinsullivan.github.io/cs-dm-dev/index.html
