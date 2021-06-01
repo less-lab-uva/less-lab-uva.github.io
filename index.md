@@ -1,6 +1,6 @@
 ---
 title: LESS - UVA
-subtitle: Laboratory for Engineering Safe Software
+subtitle: 
 layout: page
 show_sidebar: false
 hide_section: true
