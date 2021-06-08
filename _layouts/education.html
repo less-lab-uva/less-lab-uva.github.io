@@ -15,7 +15,13 @@ show_sidebar: false
   <div class="column is-12-desktop is-12-tablet">
 
     <div class="card">
+
+      <div class="card-content is-8-desktop is-12-tablet">
+        <h2 class="title is-3">{{ edu.title }}</h2>
+      </div>
+
       <a name="{{ edu.id | remove: '/education/' }}"></a>
+
       {% if edu.image %}
       <div class="card-image">
           <figure class="image {% if edu.image_ratio %} {{ edu.image_ratio }} {% else %} is-3by1 {% endif %}">
@@ -25,8 +31,6 @@ show_sidebar: false
       {% endif %}
 
       <div class="card-content is-8-desktop is-12-tablet">
-
-          <h2 class="title is-3">{{ edu.title }}</h2>
           <div class="content">{{ edu.content }}</div>  
           {% if edu.website %}
             <div class="buttons is-centered">

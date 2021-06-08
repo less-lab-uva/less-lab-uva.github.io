@@ -15,7 +15,13 @@ show_sidebar: false
     
     {% if project.label == page.label %}
       <div class="card">
+
+        <div class="card-content is-8-desktop is-12-tablet">
+          <h2 class="title is-3">{{ project.title }}</h2>
+        </div>
+
         <a name="{{ project.id | remove: '/projects/' }}"></a>
+
         {% if project.image %}
         <div class="card-image">
           <figure class="image {% if project.image_ratio %} {{ project.image_ratio }} {% else %} is-3by1 {% endif %}">
@@ -25,7 +31,6 @@ show_sidebar: false
         {% endif %}
 
         <div class="card-content is-8-desktop is-12-tablet">
-          <h2 class="title is-3">{{ project.title }}</h2>
           <div class="content">{{ project.content }}</div>  
           <br/>
           {% if project.team %}

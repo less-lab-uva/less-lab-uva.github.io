@@ -11,3 +11,5 @@ label: Foundational
 # Foundational Verification and Validation 
 
 Our group is currently leading work in the following areas:
+
+*  [Program Verification](#ProgramVerification)

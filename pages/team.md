@@ -7,7 +7,3 @@ hide_hero: true
 sponsors: team
 permalink: "/team/"
 ---
-
-# Team
-
-Our lab consists of the following team members:
