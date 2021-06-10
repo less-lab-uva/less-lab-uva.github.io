@@ -1,5 +1,5 @@
 ---
-title: LESS - Publications
+title: LESS Lab - Publications
 layout: publications
 description: The list of publications produced by UVA's LESS lab.
 hide_hero: true

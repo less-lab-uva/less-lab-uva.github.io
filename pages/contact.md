@@ -1,5 +1,5 @@
 ---
-title: LESS - Contact
+title: LESS Lab - Contact
 layout: page
 show_sidebar: false
 hide_hero: true

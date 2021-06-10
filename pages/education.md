@@ -1,5 +1,5 @@
 ---
-title: LESS - Education Innovations
+title: LESS Lab - Education Innovations
 subtitle: Education Innovations for engineering safe software
 layout: education
 show_sidebar: false

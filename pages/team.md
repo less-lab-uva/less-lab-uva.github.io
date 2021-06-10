@@ -1,5 +1,5 @@
 ---
-title: LESS - Team
+title: LESS Lab - Team
 subtitle: All the people involved in the lab
 layout: team
 show_sidebar: false

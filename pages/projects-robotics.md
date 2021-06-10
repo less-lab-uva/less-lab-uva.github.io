@@ -1,5 +1,5 @@
 ---
-title: LESS - Research Projects
+title: LESS Lab - Research Projects
 layout: projects
 show_sidebar: false
 hide_hero: true
