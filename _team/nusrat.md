@@ -1,7 +1,7 @@
 ---
 first_name: Nusrat Jahan
 last_name: Mozumder
-picture: 
+picture: /images/team/nusrat.jpg 
 website: 
 tier: Graduate Students
 ---

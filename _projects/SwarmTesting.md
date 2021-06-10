@@ -2,7 +2,7 @@
 title: Testing Drone Swarm for Configuration Bugs
 image: /images/projects/SwarmTesting.png
 date: 2021-03-11
-team: Chijung Jung, Sebastian Elbaum, Yonghwi Kwon
+team: Chijung Jung, Sebastian Elbaum, and Yonghwi Kwon
 label: Robotics
 ---
 

@@ -4,20 +4,90 @@ Our lab website: https://less-lab-uva.github.io
 
 This repository contains the site used by the Less Lab @ UVA. This site was built using [Jekyll](https://jekyllrb.com). The original sites theme is based on [bulma-clean-theme](https://github.com/chrisrhymes/bulma-clean-theme), a theme created by [C.S. Rhymes](https://dev.to/chrisrhymes). 
 
+## Working on the Website Locally.
+
+To work on the website locally you have two options. You can either use docker or you can install the dependencies manually
+
+### Docker
+
+First you need to install docker. Once you are done, go into the less lab repo and run the following command:
+```bash
+docker run --rm -it \
+  --volume="$PWD:/srv/jekyll" \
+  --volume="$PWD/vendor/bundle:/usr/local/bundle" \
+  -p 4000:4000 jekyll/jekyll:3.8 \
+  jekyll serve
+```
+
+### Installing Locally
+
+To view this website, you will need [Ruby](https://www.ruby-lang.org/en/) and [Bundle](https://bundler.io). Ruby is an open-source programming language, while Bundle is a tool that takes care of all the dependencies required to run Ruby projects. Below we provide the instructions needed to install these on both Mac OS and Ubuntu.
+
+#### Mac OS
+
+To install Ruby and Bundle on Mac OS, you need to run the following:
+
+```bash
+$ brew update
+$ brew install ruby
+$ sudo gem install bundler
+```
+
+**Note:** there have been some issues with the dependencies on Mac, although some people have got it working.
+
+Next, to install all the dependencies for the website, go into the `Website` folder and run:
+
+```bash
+$ bundle install
+```
+
+You can view the website by running the following in the `website` folder:
+```bash
+$ bundle exec jekyll serve
+```
+
+**Note:** For this to work on Mac OS you will need to install xcode. You can install xcode from the app store (it takes a while).
+
+#### Ubuntu
+
+To install Ruby and Bundle on Ubuntu you need to run the following:
+
+```bash
+$ sudo apt update
+$ sudo apt install ruby-full
+$ sudo gem install bundler
+```
+
+**Note:** These instructions were tested on Ubuntu 18.04
+
+Next, to install all the dependencies for the website, go into the `Website` folder and run:
+
+```bash
+$ bundle install
+```
+
+You can view the website by running the following in the `website` folder:
+```bash
+$ bundle exec jekyll serve
+```
+
+### Viewing the Website
+
+You can then view the website on:
+```
+http://127.0.0.1:4000/
+```
+
 ## Adding Information
 
 Adding information is as easy as opening the appropriate folder (listed below) and adding a markdown file with the correct information. 
 
 * [Team Members](./_team) :  `_team`
 * [Projects](./_projects) :  `_projects`
-* [Tools and Datasets](./_tools) :  `_tools`
-* [Gallery Images (about section)](./_gallery) :  `_gallery`
+* [Gallery Images (team section)](./_gallery) :  `_gallery`
 * [Publications](./_publications) :  `_publications`
 
 More information on what format the markdown file should be is listed under the appropriate headings below.
-
-**Note:** We are currently working on a way to pull publications automatically. However, you can still manually add or edit your publications by editing the appropriate markdown file's content.
-
 
 ### Team Members
 
@@ -45,13 +115,24 @@ tier: Professors
 
 ### Projects
 
+
+---
+
+---
+
+Testing mobile robots is difficult and expensive, and many faults go undetected. In this work we explore whether fuzzing, an automated test input generation technique, can more quickly find failure inducing inputs in mobile robots. We developed a simple fuzzing adaptation, Base-Fuzz, and one specialized for fuzzing mobile robots, Phys-Fuzz. Phys-Fuzz is unique in that it accounts for physical attributes such as the robot dimensions, estimated trajectories, and time-to-impact measures to guide the test input generation process. We evaluate Phys-Fuzz on a Clearpath Husky robot (above left) and find that for simple test generation scenarios as shown (above right), Phys-Fuzz has the potential to speed up the discovery of input scenarios that reveal failures, finding over 125% more than uniform random input selection and around 40% more than Base-Fuzz during 24 hours of testing. Phys-Fuzz continues to perform well in more complex scenarios, finding 56.5% more than uniform random input selection and 7.0% more than Base-Fuzz during 7 days of testing.
+
+
+
+
 To add a project to the website, add a markdown file to the `_project` folder. The fields which need to be filled in are:
 
 * **title**: (required) The title of your project.
 * **image**: (optional) An image that will be displayed as a banner for your project, preferably in the folder `/images/projects/`. **Note** it is best to use an image that longer vertically than horizontally for best formatting.
-* **image_ratio**: (optional) What ratio the image is, used to format the final image. Defaults to `is-3by1`. A complete list of ratios is available [here](https://bulma.io/documentation/elements/image/).
+* **date**: (required) the date which the project was started in the format `YYYY-MM-DD`, used for sorting the projects.
 * **team**: (optional) A list of team members separated by commas.
-* **date**: (required) The date your project was created in the format `YYYY-MM-DD`, used for sorting.
+* **label**: (required) This defines which section your project will end up in. It needs to be one of the following (DNN, Robotics, Foundational)
+* **team**: (optional) A sentences describing the sponsors of this project.
 
 You can then add your project details below the data fields using the standard markdown format. For a guide on basic markdown formatting, take a look at this [link](https://www.markdownguide.org/cheat-sheet).
 
@@ -59,10 +140,12 @@ An example of a complete project would look as follows:
 
 ```markdown
 ---
-title: Neural Network Verification
-image: /images/projects/neural_networks.png
-team: Carl Hildebrandt, Felipe Toledo
-date: 2015-01-22
+title: Fuzzing Mobile Robot Environments for Fast Automated Crash Detection
+image: /images/projects/Fuzzing.png
+date: 2021-06-02
+team: Trey Woodlief, Sebastian Elbaum, and Kevin Sullivan
+label: Robotics
+sponsor: 'This effort is supported by NSF Awards #1853374 and #1909414'
 ---
 
 Lorem ipsum dolor sit amet.
@@ -75,37 +158,6 @@ We tried to:
 * list
 
 This is how you make something **bold** wow!
-```
-
-### Tools and Datasets
-
-To add a tool or dataset to the website, add a markdown file to the `_tools` folder. The fields which need to be filled in are:
-
-* **title**: (required) The title of your tool or dataset.
-* **subtitle**: (required) A subtitle for your tool or dataset. Generally used to describe what you are presenting, i.e. is it a tool, dataset, artifact?
-* **image**: (optional) An image that will be displayed as a banner for your project, preferably in the folder `/images/tools/`. **Note** it is best to use an image that longer vertically than horizontally for best formatting.
-* **image_ratio**: (optional) What ratio the image is, used to format the final image. Defaults to `is-3by1`. A complete list of ratios is available [here](https://bulma.io/documentation/elements/image/).
-* **button_link**: (required) A link to your tool or dataset.
-* **github**: (optional) A link to the GitHub repository where the tool or dataset can be found.
-* **team**: (optional) A list of team members separated by commas.
-
-You can then add your tool details below the data fields using the standard markdown format. For a guide on basic markdown formatting, take a look at this [link](https://www.markdownguide.org/cheat-sheet).
-
-
-An example of a complete tool or dataset markdown file is shown below:
-
-```markdown
----
-title: Feasible and Stressful Trajectory Generation for Mobile Robots
-subtitle: Tool Artifact
-image: /images/projects/TrajectoryGeneration.gif
-description: 
-button_link: https://hildebrandt-carl.github.io/RobotTestGenerationArtifact/
-github: hildebrandt-carl/RobotTestGeneration
-team: Carl Hildebrandt, Sebastian Elbaum, Matthew Dwyer, Nicola Bezzo
----
-
-While executing nominal tests on mobile robots is...
 ```
 
 ### Gallery Images

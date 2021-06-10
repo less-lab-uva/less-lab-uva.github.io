@@ -14,8 +14,6 @@ We are always recruiting motivated colleagues, graduate students, and undergradu
 
 We partner with funding agencies, industrial, government, or non-profits interested in collaborating, using, or assessing our techniques. If you are are interested in teaming up, contact us using the email below
 
-## Contact Us
-
 <p align="center">
   <img src="../images/contact.png">
 </p>

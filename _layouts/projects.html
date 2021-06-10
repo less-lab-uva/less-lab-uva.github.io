@@ -11,35 +11,38 @@ show_sidebar: false
 
   {% assign sorted_projects = site.projects | sort:page.date %}
   {% for project in sorted_projects reversed%}
-  <div class="column is-12-desktop is-12-tablet">
-    
     {% if project.label == page.label %}
-      <div class="card">
+    <div class="column is-12-desktop is-12-tablet">
+        <div class="card">
 
-        <div class="card-content is-8-desktop is-12-tablet">
-          <h2 class="title is-3">{{ project.title }}</h2>
-        </div>
+          <div class="card-content is-8-desktop is-12-tablet">
+            <h2 class="title is-3">{{ project.title }}</h2>
+          </div>
 
-        <a name="{{ project.id | remove: '/projects/' }}"></a>
+          <a name="{{ project.id | remove: '/projects/' }}"></a>
 
-        {% if project.image %}
-        <div class="card-image">
-          <figure class="image {% if project.image_ratio %} {{ project.image_ratio }} {% else %} is-3by1 {% endif %}">
-            <img src="{{site.baseurl}}{{ project.image }}" alt="{{ project.title }}" />
-          </figure>
-        </div>
-        {% endif %}
-
-        <div class="card-content is-8-desktop is-12-tablet">
-          <div class="content">{{ project.content }}</div>  
-          <br/>
-          {% if project.team %}
-            <div class="content"><b>Team Members:</b> {{ project.team }}</div>
+          {% if project.image %}
+          <div class="card-image">
+            <figure class="image {% if project.image_ratio %} {{ project.image_ratio }} {% else %} is-3by1 {% endif %}">
+              <img src="{{site.baseurl}}{{ project.image }}" alt="{{ project.title }}" />
+            </figure>
+          </div>
           {% endif %}
-        </div>
-      </div>
-      {% endif %}
 
-  </div>
+          <div class="card-content is-8-desktop is-12-tablet">
+            <div class="content">{{ project.content }}</div>  
+            <div class="content">
+              {% if project.team %}
+                <b>Team Members:</b> {{ project.team }}
+              {% endif %}
+              <br>
+              {% if project.sponsor %}
+                <b>Sponsors:</b> {{ project.sponsor }}
+              {% endif %}
+            </div>
+          </div>
+        </div>
+    </div>
+    {% endif %}
   {% endfor %}
 </div>
