@@ -1,8 +1,9 @@
 ---
 title: "DNNV: Deep Neural Network Verification"
 image:  /images/projects/DNNV.png
+image_ratio: is-4by1
 date: 2021-07-18
-team: David Shriver, Dong Xu, Sebastian Elbaum, and Matthew B. Dwyer 
+team: David Shriver, Sebastian Elbaum, and Matthew B. Dwyer 
 label: DNN
 sponsor: 'This effort is supported by NSF Awards #1900676 and #2019239'
 ---
