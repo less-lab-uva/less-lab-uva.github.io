@@ -122,7 +122,7 @@ To add a project to the website, add a markdown file to the `_project` folder. T
 * **date**: (required) the date which the project was started in the format `YYYY-MM-DD`, used for sorting the projects.
 * **team**: (optional) A list of team members separated by commas.
 * **label**: (required) This defines which section your project will end up in. It needs to be one of the following (DNN, Robotics, Foundational)
-* **team**: (optional) A sentences describing the sponsors of this project.
+* **sponsors**: (optional) A sentence describing the sponsors of this project.
 
 You can then add your project details below the data fields using the standard markdown format. For a guide on basic markdown formatting, take a look at this [link](https://www.markdownguide.org/cheat-sheet).
 
