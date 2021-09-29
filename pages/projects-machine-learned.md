@@ -15,6 +15,6 @@ Our group is currently leading work in the following areas:
 *  [DNN Testing](#TestingNNWithGenerative)
 *  [DNN Verification](#DNNVerification) 
 *  [DNN Falsification](#DNNFalsification)
-<!-- *  [DNN Rearchitecting](#DNNRearchitecting)  -->
-*  DNN Rearchitecting
-*  [DNN V&V Benchmarking](#GDVB) 
+<!-- *  DNN Rearchitecting -->
+*  [DNN V&V Benchmarking](#GDVB)
+*  [DNN Verification using distributional models](#DFVerification) 
