@@ -2,7 +2,7 @@
 title: "Distribution Models for Falsification and Verification of DNNs"
 image:   /images/projects/DFVVerification.svg
 image_ratio: is-4by1
-date: 2021-07-18
+date: 2021-07-7
 team: Felipe Toledo, David Shriver, Sebastian Elbaum, and Matthew B. Dwyer 
 label: DNN
 sponsor: 'This effort is supported by NSF Awards #1900676 and #2019239'
