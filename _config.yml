@@ -6,7 +6,8 @@ description: >
   Laboratory for Engineering Safe Software
 baseurl: ""
 
-url: https://less-lab-uva.github.io
+# url: https://less-lab-uva.github.io
+url: 127.0.0.1
 permalink: pretty
 repository: "less-lab-uva"
 favicon: /favicon/favicon.ico
@@ -84,6 +85,10 @@ collections:
   gallery: 
     output: true
     layout: gallery
+    show_sidebar: false
+  news: 
+    output: true
+    layout: news
     show_sidebar: false
   tools: 
     output: true
