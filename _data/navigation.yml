@@ -11,7 +11,10 @@
   link: /education/
 - name: Publications
   link: /publications/
-- name: Team
-  link: /team/
 - name: About Us
-  link: /news/
+  link: /#
+  dropdown:
+    - name: Team
+      link: /team/
+    - name: News
+      link: /news/
