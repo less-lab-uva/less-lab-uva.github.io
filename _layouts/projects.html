@@ -39,6 +39,10 @@ show_sidebar: false
               {% if project.sponsor %}
                 <b>Sponsors:</b> {{ project.sponsor }}
               {% endif %}
+              <br>
+              {% if project.github %}
+                <b>Github Link:</b> <a href="{{ project.github }}">{{ project.github }}</a>
+              {% endif %}
             </div>
           </div>
         </div>

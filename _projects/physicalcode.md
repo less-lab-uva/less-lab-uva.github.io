@@ -10,6 +10,3 @@ Code drives robots, space vehicles, weapons systems, and cyber-physical systems 
 
 To improve the safety and reliability of cyber-physical systems,  we are developing and evaluating Peirce, a software infrastructure to pair software code with interpretations that map terms in code to formal specifications of their intended physical meaning (such as points, vectors, and transformations) so that the consistency of code with the physics of the larger system can be automatically checked. Peirce takes annotated source code and, using its formalized physical types in higher-order logic of a constructive logic proof assistant, determines the consistency of those physical types usages.  We are currently targeting and evaluating Peirce on robotics programs using ROS. For example,  
  
-
-<!-- ### Todo: Get updated figures from Andrew
-### Todo: Get updated text to go with figures -->
