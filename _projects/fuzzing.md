@@ -1,6 +1,6 @@
 ---
 title: Fuzzing Mobile Robot Environments for Fast Automated Crash Detection
-image: /images/projects/Fuzzing.png
+image: /images/projects/semantic_fuzzing.png
 date: 2021-06-02
 team: Trey Woodlief, Sebastian Elbaum, and Kevin Sullivan
 label: Robotics
