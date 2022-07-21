@@ -1,6 +1,6 @@
 ---
 title: Semantic Image Fuzzing of AI Perception Systems
-image: /images/projects/SwarmTesting.png
+image: /images/projects/semantic_fuzzing.png
 date: 2022-05-27
 team: Trey Woodlief, Sebastian Elbaum, and Kevin Sullivan
 label: Robotics
