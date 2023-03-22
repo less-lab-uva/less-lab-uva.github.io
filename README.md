@@ -73,16 +73,6 @@ artifactlink: https://github.com/hildebrandt-carl/RobotTestGeneration
 Lorem ipsum dolor sit amet.
 ```
 
-## Subtitle
-
-We tried to:
-* create
-* a
-* list
-
-This is how you make something **bold** wow!
-```
-
 ## Gallery Images
 
 To add a gallery image to the website, add a markdown file to the `_gallery` folder. The fields which need to be filled in are:
@@ -136,7 +126,7 @@ To add a news article to the website, add a markdown file to the `_news` folder.
 
 An example of a complete publication markdown file is shown below:
 
-```
+```markdown
 ---
 title: David Shriver wins ACM SIGSOFT Outstanding Doctoral Dissertation Award
 link: https://sigsoft.medium.com/sigsoft-awards-2023-34c6e55b5a97
