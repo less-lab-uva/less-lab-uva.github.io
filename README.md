@@ -12,6 +12,7 @@ Adding or updating information is as easy as opening the appropriate folder (lis
 * [Projects](./_projects) :  `_projects`
 * [Gallery Images (team section)](./_gallery) :  `_gallery`
 * [Publications](./_publications) :  `_publications`
+* [News](./_news_) :  `_news`
 
 More information on what format the markdown file should be is listed under the appropriate headings below.
 
