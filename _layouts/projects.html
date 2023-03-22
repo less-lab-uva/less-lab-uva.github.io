@@ -34,18 +34,19 @@ show_sidebar: false
             <div class="content">
               {% if project.team %}
                 <b>Team Members:</b> {{ project.team }}
+                <br>
               {% endif %}
-              <br>
               {% if project.sponsor %}
                 <b>Sponsors:</b> {{ project.sponsor }}
+                <br>
               {% endif %}
-              <br>
               {% if project.paperlink %}
                 <b>Paper Link:</b> <a href="{{ project.paperlink }}">{{ project.paperlink }}</a>
+                <br>
               {% endif %}
-              <br>
               {% if project.artifactlink %}
                 <b>Artifact Link:</b> <a href="{{ project.artifactlink }}">{{ project.artifactlink }}</a>
+                <br>
               {% endif %}
             </div>
           </div>
