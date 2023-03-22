@@ -24,7 +24,7 @@ show_sidebar: false
           {% if project.image %}
           <div class="card-image">
             <figure class="image {% if project.image_ratio %} {{ project.image_ratio }} {% else %} is-3by1 {% endif %}">
-              <img src="{{site.baseurl}}{{ project.image }}" alt="{{ project.title }}" />
+              <img src="{{ site.baseurl }}{{ project.image }}" alt="{{ project.title }}" />
             </figure>
           </div>
           {% endif %}
@@ -40,8 +40,11 @@ show_sidebar: false
                 <b>Sponsors:</b> {{ project.sponsor }}
               {% endif %}
               <br>
-              {% if project.github %}
-                <b>Github Link:</b> <a href="{{ project.github }}">{{ project.github }}</a>
+              {% if project.paperlink %}
+                <b>Paper Link:</b> <a href="{{ project.paperlink }}">{{ project.paperlink }}</a>
+              {% endif %}
+              {% if project.artifactlink %}
+                <b>Artifact Link:</b> <a href="{{ project.artifactlink }}">{{ project.artifactlink }}</a>
               {% endif %}
             </div>
           </div>

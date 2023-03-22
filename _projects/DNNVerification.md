@@ -6,7 +6,7 @@ date: 2021-07-18
 team: David Shriver, Sebastian Elbaum, and Matthew B. Dwyer 
 label: DNN
 sponsor: 'This effort is supported by NSF Awards #1900676 and #2019239'
-github: https://github.com/dlshriver/DNNV
+artifactlink: https://github.com/dlshriver/DNNV
 ---
 
 DNNV is a framework for verifying deep neural networks (DNN). 
