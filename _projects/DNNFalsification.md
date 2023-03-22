@@ -6,6 +6,7 @@ team: David Shriver, Sebastian Elbaum, and Matthew B. Dwyer
 label: DNN
 sponsor: 'This effort is supported by NSF Awards #1900676 and #2019239'
 artifactlink: https://github.com/dlshriver/DNNF
+paperlink: https://dlshriver.com/assets/files/publications/ICSE21-DNNF.pdf
 ---
 
 DNNF is a framework for falsification of deep neural networks (DNN).

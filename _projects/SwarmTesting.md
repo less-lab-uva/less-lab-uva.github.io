@@ -4,6 +4,7 @@ image: /images/projects/SwarmTesting.png
 date: 2021-03-11
 team: Chijung Jung, Sebastian Elbaum, and Yonghwi Kwon
 label: Robotics
+paperlink: https://dl.acm.org/doi/pdf/10.1145/3468264.3468601
 ---
 
 Swarm robotics collectively solve problems that are challenging for individual robots, from environmental monitoring to entertainment. The algorithms enabling swarms allow individual robots of the swarm to plan, share, and coordinate their trajectories and tasks to achieve a common goal. Such algorithms rely on a large number of configurable parameters that can be tailored to target particular scenarios. This large configuration space, the complexity of the algorithms, and the dependencies with the robots’ setup and performance make debugging and fixing swarms configuration bugs extremely challenging.
