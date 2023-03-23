@@ -2,9 +2,9 @@
 title: Input Distribution Coverage: Measuring Feature Interaction Adequacy in Neural Network Testing
 image: /images/projects/IDC.png
 date: 2022-12-12
-team: Swaroopa Dola, Matthew B. Dwyer, and Mary Lou Soffa 
+team: Swaroopa Dola, Matthew B. Dwyer, and Mary Lou Soffa
 label: DNN
-sponsor: 'This effort is supported by NSF Awards #2019239 and #2129824, by The Air Force Office of Scientiic Research under award number FA9550-21-0164, and by Lockheed Martin Advanced Technology Laboratories'
+sponsor: 'This effort is supported by NSF Awards #2019239 and #2129824, by The Air Force Office of Scientiic Research under award #FA9550-21-0164, and by Lockheed Martin Advanced Technology Laboratories'
 paperlink: https://dl.acm.org/doi/pdf/10.1145/3576040
 github: https://github.com/less-lab-uva/InputDistributionCoverage
 ---
