@@ -1,6 +1,7 @@
 ---
 title: "Input Distribution Coverage: Measuring Feature Interaction Adequacy in Neural Network Testing"
 image: /images/projects/IDC.png
+image_ratio: is-4by1
 date: 2022-12-12
 team: Swaroopa Dola, Matthew B. Dwyer, and Mary Lou Soffa
 label: DNN
