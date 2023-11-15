@@ -57,6 +57,12 @@ def main():
                 last_name = line.split(':')[1].lstrip().rstrip("\n")
             if "dblp_uri" in line:
                 uri = line[len("dblp_uri: "):].rstrip("\n")
+            if "tier" in line:
+                tier = line[len("tier: "):].rstrip("\n")
+
+        if tier == "Previous Members":
+            print("Skipping (previous member): " + first_name + " " + last_name)
+            continue
         
         # Get the bib
         if uri is not None:
