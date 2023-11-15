@@ -5,5 +5,5 @@ picture: /images/team/chris.png
 tier: Previous Members
 dblp_uri:
 jobtitle:
-website:
+website: https://christheissmorse.github.io/
 ---
