@@ -23,10 +23,10 @@ To add a team member, add your markdown file to the `_team` folder. The fields w
 * **first_name**: (required) Your first name.
 * **last_name**: (required) Your last name.
 * **picture**: (optional) A picture of you, preferably in the folder `/images/team/`. **Note:** the image needs to be square.
-* **tier**: (required) This needs to be one of the following (Professors, Research Scientists, Graduate Students, Undergraduate Students, Previous Students). This actually can be anything, and anyone with the same tier will be automatically added into a section with that title.
+* **tier**: (required) This needs to be one of the following (Professors, Research Scientists, Graduate Students, Undergraduate Students, Previous Members). This actually can be anything, and anyone with the same tier will be automatically added into a section with that title.
 * **dblp_uri**: (optional) A link to your dblp bib file. By adding this, we will automatically add your publications to the publications tab.
 * **website**: (optional) A link to your personal website.
-* **jobtitle**: (optional) Used for previous students to indicate where they are now working.
+* **jobtitle**: (optional) Used for previous members to indicate where they are now working.
 
 An example of a complete team member markdown file is shown below:
 
@@ -35,7 +35,7 @@ An example of a complete team member markdown file is shown below:
 first_name: David
 last_name: Shriver
 picture: /images/team/david.jpg
-tier: Previous Students
+tier: Previous Members
 dblp_uri: https://dblp.org/pid/202/8415.bib
 website: dlshriver.github.io
 jobtitle: Software Engineering Institute
