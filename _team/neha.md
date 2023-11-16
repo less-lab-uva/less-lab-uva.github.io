@@ -1,9 +1,9 @@
 ---
-first_name: Mitchell
-last_name: Gerrard
-picture: /images/team/mitch.jpg
-tier: Previous Members
-dblp_uri: https://dblp.org/pid/178/3831.bib
-jobtitle: 
-website: dlshriver.github.io
+first_name: Neha
+last_name: Krishnakumar
+picture: /images/team/neha.jpg
+tier: Undergraduate Students
+dblp_uri:
+jobtitle:
+website:
 ---
