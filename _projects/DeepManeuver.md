@@ -18,4 +18,4 @@ Adversarial test generation techniques aim to produce input perturbations that c
     (2) retain the effect of the perturbation on previous states so that the current state is still reachable and past trajectory is preserved; and
     (3) result in multi-target maneuvers that require fulfillment of vehicle state sequences (e.g. reaching locations in a road to navigate a tight turn).
     Our assessment reveals that DeepManeuver can generate perturbations to force maneuvers more effectively and consistently than state-of-the-art techniques by 20.7 percentage points on average.
-    We also show DeepManeuver's effectiveness at disrupting vehicle behavior to achieve multi-target maneuvers with a minimum 52\% rate of success. 
+    We also show DeepManeuver's effectiveness at disrupting vehicle behavior to achieve multi-target maneuvers with a minimum 52% rate of success. 
