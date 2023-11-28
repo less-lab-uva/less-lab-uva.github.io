@@ -4,7 +4,7 @@ image: /images/projects/DeepManeuver.png
 date: 2023-10-01
 team: Meriel von Stein, David Shriver, and Sebastian Elbaum
 label: Robotics
-sponsor: 'TThis work was supported in part by NSF Awards #1924777 and #2312487, and AFOSR Award #FA9550-21-1-0164.'
+sponsor: 'This work was supported in part by NSF Awards #1924777 and #2312487, and AFOSR Award #FA9550-21-1-0164.'
 artifactlink: https://github.com/MissMeriel/DeepManeuver
 paperlink: https://ieeexplore.ieee.org/abstract/document/10213222
 ---
