@@ -1,6 +1,6 @@
 ---
 title: 'Generating Realistic and Diverse Tests for LiDAR-Based Perception Systems'
-image: /images/projects/semLiDARFuzz.png
+image: /images/projects/semLidarFuzz.png
 date: 2023-5-20
 team: Garrett Christian, Trey Woodlief, and Sebastian Elbaum
 label: Robotics
