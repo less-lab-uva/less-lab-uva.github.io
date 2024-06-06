@@ -4,6 +4,6 @@ last_name: Morse
 picture: /images/team/chris.png
 tier: Previous Members
 dblp_uri:
-jobtitle:
+jobtitle: Durandal
 website: christheissmorse.github.io/
 ---
