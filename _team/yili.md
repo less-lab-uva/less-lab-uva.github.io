@@ -1,7 +1,7 @@
 ---
 first_name: Yili
 last_name: Bai
-picture: /images/team/yili.pjg
+picture: /images/team/yili.jpg
 tier: Undergraduate Students
 dblp_uri:
 jobtitle:
