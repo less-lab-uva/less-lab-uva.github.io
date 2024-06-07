@@ -67,7 +67,10 @@ def main():
         # Get the bib
         if uri is not None:
             print("Processing: " + first_name + " " + last_name)
-
+            
+            if len(uri) <= 0:
+                continue
+            
             # Get all the entries for the person
             resp = requests.get(uri)
             bib_database = bibtexparser.loads(resp.text)
