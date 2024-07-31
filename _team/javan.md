@@ -2,7 +2,7 @@
 first_name: Javan
 last_name: Mendoza
 picture: /images/team/default.png
-tier: Undergraduate Students
+tier: Previous Members
 dblp_uri:
 jobtitle:
 website:
