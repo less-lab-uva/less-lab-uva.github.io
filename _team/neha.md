@@ -2,8 +2,8 @@
 first_name: Neha
 last_name: Krishnakumar
 picture: /images/team/neha.jpeg
-tier: Undergraduate Students
+tier: Previous Members
 dblp_uri:
-jobtitle:
+jobtitle: Syntek Technologies
 website:
 ---

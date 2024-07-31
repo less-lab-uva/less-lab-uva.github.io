@@ -2,7 +2,7 @@
 first_name: Mira
 last_name: Khan
 picture: /images/team/mira.jpg
-tier: Undergraduate Students
+tier: Previous Members
 dblp_uri:
 jobtitle:
 website:
