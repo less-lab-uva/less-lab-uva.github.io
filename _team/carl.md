@@ -2,8 +2,8 @@
 first_name: Carl
 last_name: Hildebrandt
 picture: /images/team/carl.png
-tier: Graduate Students
+tier: Previous Members
 dblp_uri: https://dblp.org/pid/233/0125.bib
-jobtitle:
+jobtitle: Software Engineer, Nuro
 website: hildebrandt-carl.github.io
 ---
