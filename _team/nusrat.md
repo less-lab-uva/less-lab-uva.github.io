@@ -5,5 +5,5 @@ picture: /images/team/nusrat.jpg
 tier: Graduate Students
 dblp_uri:
 jobtitle:
-website: 
+website: nusratdeeptee.github.io
 ---
