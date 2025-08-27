@@ -2,7 +2,7 @@
 first_name: Rory
 last_name: McDaniel
 picture: /images/team/rory.jpg
-tier: Graduate Students
+tier: Previous Members
 dblp_uri:
 jobtitle:
 website:
