@@ -137,7 +137,13 @@ date: 2023-03-23
 
 # Automatically Updating Publications
 
-To update the publications, all you need to do is run the `UpdatePublications.py` script. To do that you can run the following command in your terminal:
+To update the publications, all you need to do is run the `UpdatePublications.py` script. To do that you need to create a python 3.8 environment and install the required packages by doing:
+```bash
+$ conda create -n lesslab python=3.8
+$ conda activate lesslab
+$ pip install -r requirements.txt
+```
+After creating the environment, run the following command in your terminal:
 ```bash
 $ python3 UpdatePublications.py
 ```
