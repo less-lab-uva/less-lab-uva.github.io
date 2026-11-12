@@ -5,6 +5,6 @@ picture: /images/team/nahian.jpeg
 tier: Graduate Students
 dblp_uri:
 jobtitle:
-website: https://nahiansalsabil.github.io/
+website: nahiansalsabil.github.io/
 ---
 
